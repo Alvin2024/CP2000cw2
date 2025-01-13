@@ -79,4 +79,6 @@
     <string name="leaves">Leaves</string>
     <string name="sal">Salary</string>
     <string name="submit">Submit</string>
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
 </resources>
