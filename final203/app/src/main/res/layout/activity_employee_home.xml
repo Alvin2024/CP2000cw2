@@ -5,20 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".employee_home"
-    >
-
-
-    <?xml version="1.0" encoding="utf-8"?>
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#D3D3D3"
-        android:padding="16dp"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="60dp">
-
-
+    tools:context=".employee_home">
 
         <TextView
             android:id="@+id/employee_label"
@@ -63,47 +50,41 @@
 
         <Button
             android:id="@+id/request_holiday_button"
-            android:layout_width="0dp"
+            android:layout_width="379dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="56dp"
+            android:layout_marginTop="75dp"
             android:backgroundTint="@color/black"
             android:padding="16dp"
             android:text="@string/Request_holi"
             android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/personal_details_button"
+            app:layout_constraintTop_toTopOf="@+id/personal_details_button"
             tools:ignore="VisualLintButtonSize" />
 
         <Button
             android:id="@+id/booked_holidays_button"
-            android:layout_width="0dp"
+            android:layout_width="379dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="84dp"
+            android:layout_marginTop="67dp"
             android:backgroundTint="@color/black"
             android:padding="16dp"
             android:text="@string/Booked_holi"
             android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/request_holiday_button"
+            app:layout_constraintTop_toTopOf="@+id/request_holiday_button"
             tools:ignore="VisualLintButtonSize" />
 
         <Button
             android:id="@+id/notifications_button"
-            android:layout_width="0dp"
+            android:layout_width="363dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="75dp"
             android:backgroundTint="@color/black"
             android:padding="16dp"
             android:text="@string/Notifications"
             android:textColor="#FFFFFF"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/booked_holidays_button"
+            app:layout_constraintTop_toTopOf="@+id/booked_holidays_button"
             tools:ignore="VisualLintButtonSize" />
 
         <Button
@@ -121,7 +102,6 @@
             app:layout_constraintTop_toBottomOf="@id/notifications_button"
             tools:ignore="VisualLintButtonSize,TouchTargetSizeCheck" />
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

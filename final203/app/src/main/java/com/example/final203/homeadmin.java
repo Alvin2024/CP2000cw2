@@ -32,7 +32,7 @@ public class homeadmin extends AppCompatActivity {
         holidayRequestsButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(homeadmin.this, hrequests.class);
+                Intent intent = new Intent(homeadmin.this, employee_request_holiday.class);
                 startActivity(intent);
             }
         });
