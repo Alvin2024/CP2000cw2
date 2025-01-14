@@ -1,32 +1,30 @@
 package com.example.final203;
 
+import java.util.List;
+
+import retrofit2.Call;
+
 public class Employee {
+    private int id;
     private String name;
     private String surname;
-    private String role;
     private String email;
-    private String address;
+    private String department;
+    private double salary;
     private String startDate;
-
-    public Employee(String name, String surname, String role, String email, String address, String startDate) {
-        this.name = name;
-        this.surname = surname;
-        this.role = role;
-        this.email = email;
-        this.address = address;
-        this.startDate = startDate;
-    }
+    private int leaves;
 
     public Employee() {
 
     }
+    public int getId(){return id;}
 
-    public String getName() {
-        return name;
+    public void setId(int id) {
+        this.id = id;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getname() {
+        return name;
     }
 
     public String getSurname() {
@@ -37,14 +35,6 @@ public class Employee {
         this.surname = surname;
     }
 
-    public String getRole() {
-        return role;
-    }
-
-    public void setRole(String role) {
-        this.role = role;
-    }
-
     public String getEmail() {
         return email;
     }
@@ -53,12 +43,20 @@ public class Employee {
         this.email = email;
     }
 
-    public String getAddress() {
-        return address;
+    public String getDepartment() {
+        return department;
     }
 
-    public void setAddress(String address) {
-        this.address = address;
+    public void setDepartment(String department) {
+        this.department = department;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 
     public String getStartDate() {
@@ -67,5 +65,21 @@ public class Employee {
 
     public void setStartDate(String startDate) {
         this.startDate = startDate;
+    }
+
+    public int getLeaves() {
+        return leaves;
+    }
+
+    public void setLeaves(int leaves) {
+        this.leaves = leaves;
+    }
+
+    public Call<List<Employee>> getAllEmployees() {
+        return null;
+    }
+
+    public char[] name() {
+        return new char[0];
     }
 }

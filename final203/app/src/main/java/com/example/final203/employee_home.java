@@ -2,7 +2,6 @@ package com.example.final203;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
@@ -25,44 +24,29 @@ public class employee_home extends AppCompatActivity {
         Button notificationsButton = findViewById(R.id.notifications_button);
         Button logoutButton = findViewById(R.id.logout_button);
 
-        personalDetailsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(employee_home.this, employee_personal_details.class);
-                startActivity(intent);
-            }
+        personalDetailsButton.setOnClickListener(v -> {
+            Intent intent = new Intent(employee_home.this, employee_personal_details.class);
+            startActivity(intent);
         });
 
-        requestHolidayButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(employee_home.this, hrequests.class);
-                startActivity(intent);
-            }
+        requestHolidayButton.setOnClickListener(v -> {
+            Intent intent = new Intent(employee_home.this, hrequests.class);
+            startActivity(intent);
         });
 
-        bookedHolidaysButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(employee_home.this, book_holidays.class);
-                startActivity(intent);
-            }
+        bookedHolidaysButton.setOnClickListener(v -> {
+            Intent intent = new Intent(employee_home.this, book_holidays.class);
+            startActivity(intent);
         });
 
-        notificationsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(employee_home.this, employee_notifications.class);
-                startActivity(intent);
-            }
+        notificationsButton.setOnClickListener(v -> {
+            Intent intent = new Intent(employee_home.this, employee_notifications.class);
+            startActivity(intent);
         });
 
-        logoutButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(employee_home.this, MainActivity.class);
-                startActivity(intent);
-            }
+        logoutButton.setOnClickListener(v -> {
+            Intent intent = new Intent(employee_home.this, MainActivity.class);
+            startActivity(intent);
         });
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
