@@ -13,23 +13,17 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class employee_home extends AppCompatActivity {
 
-    private Button personalDetailsButton;
-    private Button requestHolidayButton;
-    private Button bookedHolidaysButton;
-    private Button notificationsButton;
-    private Button logoutButton;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_employee_home);
 
-        personalDetailsButton = findViewById(R.id.personal_details_button);
-        requestHolidayButton = findViewById(R.id.request_holiday_button);
-        bookedHolidaysButton = findViewById(R.id.booked_holidays_button);
-        notificationsButton = findViewById(R.id.notifications_button);
-        logoutButton = findViewById(R.id.logout_button);
+        Button personalDetailsButton = findViewById(R.id.personal_details_button);
+        Button requestHolidayButton = findViewById(R.id.request_holiday_button);
+        Button bookedHolidaysButton = findViewById(R.id.booked_holidays_button);
+        Button notificationsButton = findViewById(R.id.notifications_button);
+        Button logoutButton = findViewById(R.id.logout_button);
 
         personalDetailsButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,7 +36,7 @@ public class employee_home extends AppCompatActivity {
         requestHolidayButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(employee_home.this, employee_request_holiday.class);
+                Intent intent = new Intent(employee_home.this, hrequests.class);
                 startActivity(intent);
             }
         });

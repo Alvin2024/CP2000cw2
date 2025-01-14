@@ -17,20 +17,14 @@ public class MainActivity extends AppCompatActivity {
         Button adminButton = findViewById(R.id.adminButton);
         Button employeeButton = findViewById(R.id.employeeButton);
 
-        adminButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, homeadmin.class);
-                startActivity(intent);
-            }
+        adminButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, homeadmin.class);
+            startActivity(intent);
         });
 
-        employeeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, employee_home.class);
-                startActivity(intent);
-            }
+        employeeButton.setOnClickListener(v -> {
+            Intent intent = new Intent(MainActivity.this, employee_home.class);
+            startActivity(intent);
         });
     }
 }

@@ -9,7 +9,7 @@
     tools:context=".homeadmin">
 
     <TextView
-        android:id="@+id/employee_label"
+        android:id="@+id/admin_label"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -72,26 +72,13 @@
         tools:ignore="VisualLintButtonSize" />
 
     <Button
-        android:id="@+id/personal_details_button"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/Personal_details"
-        android:textColor="#FFFFFF"
-        android:backgroundTint="#000000"
-        app:layout_constraintTop_toBottomOf="@id/notifications_button"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"
-        tools:ignore="VisualLintButtonSize" />
-
-    <Button
         android:id="@+id/add_employee_button"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="@string/Add_employee"
         android:textColor="#FFFFFF"
         android:backgroundTint="#000000"
-        app:layout_constraintTop_toBottomOf="@id/personal_details_button"
+        app:layout_constraintTop_toBottomOf="@id/notifications_button"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp"
