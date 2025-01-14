@@ -19,7 +19,9 @@
     <string name="Back">Back</string>
     <string name="emp_add">Add New Employee</string>
     <string name="Name">Name</string>
+    <string name="Name2">Name:</string>
     <string name="Surname">Surname</string>
+    <string name="Surname2">Surname:</string>
     <string name="Role">Role</string>
     <string name="email">Email</string>
     <string name="Address">Address</string>
@@ -56,10 +58,10 @@
     <string name="Job_Description">Job Description Sales Assistant</string>
     <string name="back">Back </string>
     <string name="date_I">19 Jan</string>
-    <string name="date_II">15 Jan</string>
-    <string name="Success">Holiday for 27 Jan has been approved</string>
+    <string name="date_II">Date:</string>
+    <string name="Success">Your holiday has been approved</string>
     <string name="Passchange">Password successfully changed</string>
-    <string name="Reject">Holiday Request Unsuccessful for 17 Jan</string>
+    <string name="Reject">Your holiday request has been rejected</string>
     <string name="Pdetails">Personal Details</string>
     <string name="Request_holi">Request Holiday</string>
     <string name="Start_Date">Start Date</string>
@@ -81,4 +83,6 @@
     <string name="submit">Submit</string>
     <string name="Username">Username</string>
     <string name="Password">Password</string>
+    <string name="Delete">Delete</string>
+    <string name="Placeholder">Placeholder</string>
 </resources>
